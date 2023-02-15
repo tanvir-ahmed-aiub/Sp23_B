@@ -1,4 +1,4 @@
-﻿
+﻿@model FormSubmission.Models.Register
 @{
     ViewBag.Title = "Index";
 }
@@ -23,12 +23,12 @@
     
     Id: <input type="text"  name="Id" placeholder="Id" class="form-control" />
     
-    Gender: <input type="radio" name="Gender" value="Male" /> Male<input type="radio" name="Gender" value="Female" /> Female
+    Gender: <input type="radio" checked="@(Model!=null && Model.Gender.Equals("Male") ? true:false)" name="Gender" value="Male" /> Male<input type="radio" name="Gender" checked="@(Model!=null && Model.Gender.Equals("Female") ? true:false)" value="Female" /> Female
     <br />Profession:<br />
     <select class="form-control" name="Profession">
         <option selected disabled>Select</option>
-        <option>Student</option>
-        <option>Teacher</option>
+        <option selected="@(Model !=null && Model.Profession != null && Model.Profession.Equals("Student") ? true:false)">Student</option>
+        <option >Teacher</option>
     </select>
     Hobbies:
     <input type="checkbox" checked="@(CheckHobby("Games"))"  value="Games" name="Hobbies[]" /> Games
