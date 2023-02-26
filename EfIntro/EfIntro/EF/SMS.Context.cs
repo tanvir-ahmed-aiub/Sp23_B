@@ -27,5 +27,7 @@ namespace EfIntro.EF
     
         public virtual DbSet<Cours> Courses { get; set; }
         public virtual DbSet<Student> Students { get; set; }
+        public virtual DbSet<Department> Departments { get; set; }
+        public virtual DbSet<CourseStudent> CourseStudents { get; set; }
     }
 }

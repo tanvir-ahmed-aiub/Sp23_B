@@ -132,6 +132,12 @@
     <Compile Include="EF\Cours.cs">
       <DependentUpon>SMS.tt</DependentUpon>
     </Compile>
+    <Compile Include="EF\CourseStudent.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF\Department.cs">
+      <DependentUpon>SMS.tt</DependentUpon>
+    </Compile>
     <Compile Include="EF\SMS.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -171,7 +177,7 @@
       <LastGenOutput>SMS.cs</LastGenOutput>
     </Content>
     <Content Include="favicon.ico" />
-    <Content Include="EF\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
@@ -218,10 +224,10 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="EF\fonts\glyphicons-halflings-regular.woff2" />
-    <Content Include="EF\fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="EF\fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="EF\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\bootstrap.min.css.map" />
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
