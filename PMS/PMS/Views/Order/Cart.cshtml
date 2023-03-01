@@ -1,0 +1,54 @@
+﻿@model IEnumerable<PMS.EF.Models.Product>
+
+@{
+    ViewBag.Title = "Cart";
+}
+
+<h2>Cart</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Qty)
+        </th>
+        <th></th>
+    </tr>
+    @{
+        double total = 0;
+    }
+@foreach (var item in Model) {
+    total += item.Price * item.Qty;
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Price)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Qty)
+        </td>
+        
+    </tr>
+}
+<tr>
+    <th>
+        Total
+    </th>
+    <th>
+        @total
+    </th>
+    <td>
+        <a href="/Order/Place" class="btn btn-danger">Place Order</a>
+    </td>
+</tr>
+</table>
