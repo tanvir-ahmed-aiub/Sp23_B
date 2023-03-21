@@ -84,3 +84,8 @@ C:\Users\Tanvir Ahmed\Desktop\.NET\B\PMS\PMS\obj\Debug\PMS.pdb
 C:\Users\Tanvir Ahmed\Desktop\.NET\B\PMS\PMS\obj\Debug\PMS.Migrations.ALLAdded.resources
 C:\Users\Tanvir Ahmed\Desktop\.NET\B\PMS\PMS\obj\Debug\PMS.csproj.GenerateResource.cache
 C:\Users\Tanvir Ahmed\Desktop\.NET\B\PMS\PMS\obj\Debug\PMS.Migrations.ODPriceDTChnanged.resources
+C:\Users\Tanvir Ahmed\Desktop\.NET\B\PMS\PMS\obj\Debug\PMS.Migrations.UserTableAddedandPKFKOrderUser.resources
+C:\Users\Tanvir Ahmed\Desktop\.NET\B\PMS\PMS\obj\Debug\PMS.Migrations.UpdateRelation.resources
+C:\Users\Tanvir Ahmed\Desktop\.NET\B\PMS\PMS\obj\Debug\PMS.Migrations.UpdateRelation2.resources
+C:\Users\Tanvir Ahmed\Desktop\.NET\B\PMS\PMS\obj\Debug\PMS.Migrations.UpdateRelation3.resources
+C:\Users\Tanvir Ahmed\Desktop\.NET\B\PMS\PMS\obj\Debug\PMS.Migrations.update.resources

@@ -127,12 +127,15 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Auth\Logged.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\OrderController.cs" />
     <Compile Include="EF\Models\Category.cs" />
     <Compile Include="EF\Models\Order.cs" />
     <Compile Include="EF\Models\OrderDetail.cs" />
     <Compile Include="EF\Models\Product.cs" />
+    <Compile Include="EF\Models\User.cs" />
     <Compile Include="EF\PMSContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -145,7 +148,28 @@
     <Compile Include="Migrations\202302280819438_ODPriceDTChnanged.designer.cs">
       <DependentUpon>202302280819438_ODPriceDTChnanged.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202303120728266_UserTableAddedandPKFKOrderUser.cs" />
+    <Compile Include="Migrations\202303120728266_UserTableAddedandPKFKOrderUser.designer.cs">
+      <DependentUpon>202303120728266_UserTableAddedandPKFKOrderUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202303120731425_UpdateRelation.cs" />
+    <Compile Include="Migrations\202303120731425_UpdateRelation.designer.cs">
+      <DependentUpon>202303120731425_UpdateRelation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202303120733568_UpdateRelation2.cs" />
+    <Compile Include="Migrations\202303120733568_UpdateRelation2.designer.cs">
+      <DependentUpon>202303120733568_UpdateRelation2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202303120737348_UpdateRelation3.cs" />
+    <Compile Include="Migrations\202303120737348_UpdateRelation3.designer.cs">
+      <DependentUpon>202303120737348_UpdateRelation3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202303120744132_update.cs" />
+    <Compile Include="Migrations\202303120744132_update.designer.cs">
+      <DependentUpon>202303120744132_update.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\LoginModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -186,10 +210,10 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Order\Index.cshtml" />
     <Content Include="Views\Order\Cart.cshtml" />
+    <Content Include="Views\Login\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -210,6 +234,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202302280819438_ODPriceDTChnanged.resx">
       <DependentUpon>202302280819438_ODPriceDTChnanged.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202303120728266_UserTableAddedandPKFKOrderUser.resx">
+      <DependentUpon>202303120728266_UserTableAddedandPKFKOrderUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202303120731425_UpdateRelation.resx">
+      <DependentUpon>202303120731425_UpdateRelation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202303120733568_UpdateRelation2.resx">
+      <DependentUpon>202303120733568_UpdateRelation2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202303120737348_UpdateRelation3.resx">
+      <DependentUpon>202303120737348_UpdateRelation3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202303120744132_update.resx">
+      <DependentUpon>202303120744132_update.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -1,4 +1,5 @@
-﻿using PMS.EF;
+﻿using PMS.Auth;
+using PMS.EF;
 using PMS.EF.Models;
 using System;
 using System.Collections.Generic;
@@ -11,9 +12,10 @@ namespace PMS.Controllers
     public class OrderController : Controller
     {
         // GET: Order
+        [Logged]
         public ActionResult Index(int id=1) //id means page number
         {
-
+           
             PMSContext db = new PMSContext();
             int itemperpage = 10;
             int total = db.Products.Count();
