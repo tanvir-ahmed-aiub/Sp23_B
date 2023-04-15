@@ -51,7 +51,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataAccessFactory.cs" />
     <Compile Include="EmpContext.cs" />
+    <Compile Include="Interfaces\IAuth.cs" />
     <Compile Include="Interfaces\IRepo.cs" />
     <Compile Include="Migrations\202303280723264_DbInit.cs" />
     <Compile Include="Migrations\202303280723264_DbInit.designer.cs">
@@ -61,13 +63,24 @@
     <Compile Include="Migrations\202304040728020_CourseAdded.designer.cs">
       <DependentUpon>202304040728020_CourseAdded.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202304110712112_UserAuthAdded.cs" />
+    <Compile Include="Migrations\202304110712112_UserAuthAdded.designer.cs">
+      <DependentUpon>202304110712112_UserAuthAdded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304110729294_LoginTableAdded.cs" />
+    <Compile Include="Migrations\202304110729294_LoginTableAdded.designer.cs">
+      <DependentUpon>202304110729294_LoginTableAdded.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Course.cs" />
     <Compile Include="Models\Employee.cs" />
+    <Compile Include="Models\Login.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repos\CourseRepo.cs" />
     <Compile Include="Repos\EmployeeRepo.cs" />
     <Compile Include="Repos\EmployeeRepoV2.cs" />
+    <Compile Include="Repos\LoginRepo.cs" />
+    <Compile Include="Repos\Repo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -79,6 +92,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202304040728020_CourseAdded.resx">
       <DependentUpon>202304040728020_CourseAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304110712112_UserAuthAdded.resx">
+      <DependentUpon>202304110712112_UserAuthAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304110729294_LoginTableAdded.resx">
+      <DependentUpon>202304110729294_LoginTableAdded.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

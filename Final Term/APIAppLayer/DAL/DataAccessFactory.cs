@@ -17,5 +17,8 @@ namespace DAL
         public static IRepo<Course, int, Course> CourseData() {
             return new CourseRepo();
         }
+        public static IAuth AuthData() {
+            return new LoginRepo();
+        }
     }
 }

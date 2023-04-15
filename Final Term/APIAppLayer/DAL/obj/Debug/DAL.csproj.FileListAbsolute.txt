@@ -13,3 +13,5 @@ C:\Users\Tanvir Ahmed\Desktop\.NET\B\Final Term\APIAppLayer\DAL\obj\Debug\DAL.pd
 C:\Users\Tanvir Ahmed\Desktop\.NET\B\Final Term\APIAppLayer\DAL\obj\Debug\DAL.Migrations.DbInit.resources
 C:\Users\Tanvir Ahmed\Desktop\.NET\B\Final Term\APIAppLayer\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
 C:\Users\Tanvir Ahmed\Desktop\.NET\B\Final Term\APIAppLayer\DAL\obj\Debug\DAL.Migrations.CourseAdded.resources
+C:\Users\Tanvir Ahmed\Desktop\.NET\B\Final Term\APIAppLayer\DAL\obj\Debug\DAL.Migrations.UserAuthAdded.resources
+C:\Users\Tanvir Ahmed\Desktop\.NET\B\Final Term\APIAppLayer\DAL\obj\Debug\DAL.Migrations.LoginTableAdded.resources

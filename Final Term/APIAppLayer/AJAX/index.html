@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+
+
+<body>
+<div ng-app>
+	<input type="text" ng-model="data" ><br>
+	<span>{{data}}</span>
+</div>
+<div id="demo">
+  <h2>Let AJAX change this text</h2>
+  <button type="button" onclick="loadDoc()">AJAX</button>
+</div>
+<div id="output">
+	
+</div>
+</body>
+<script>
+	function loadDoc() {
+	  const xhttp = new XMLHttpRequest();
+	  xhttp.onreadystatechange = function() {
+	     if (this.readyState==4 && this.status == 200){
+			var response = this.responseText;
+			var objArr = JSON.parse(response);
+			var obj1 = objArr[0];
+			document.getElementById("output").innerHTML = obj1.Name;
+			debugger;
+		 }
+	  }
+	  xhttp.open("GET", "https://localhost:44365/api/employees", true);
+	  xhttp.send();
+}
+</script>
+</html>
